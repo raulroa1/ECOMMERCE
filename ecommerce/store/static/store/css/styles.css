@@ -1,0 +1,102 @@
+:root {
+    --primary-color: #8A2BE2;
+    --secondary-color: #4B0082;
+    --light-color: #f5f5f5;
+    --dark-color: #333;
+    --color2:#01d7f4;
+    --color3:#ffdf03;
+    --color4:#fd7b03;
+    --color5:#ff0014;
+    --color6:#fff;
+    --color7:#d2d2d2;
+    --color8:#480C6C;
+    --color9:#8A7131;
+}
+
+body {
+    background-color: var(--light-color);
+    color: var(--color5);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.card-text {
+    color: #666;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+}
+
+.footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .card img {
+        height: 150px;
+    }
+}
