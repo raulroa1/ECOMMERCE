@@ -14,12 +14,14 @@
 }
 .fondo-negro {
     background-color: black;
-    color: white; /* Opcional: para asegurar que el texto sea legible */
-    padding: 20px; /* Opcional: para agregar espacio interior */
-    border-radius: 5px; /* Opcional: para esquinas redondeadas */
+    padding-top: 0%;
+}
+.fondo-morado {
+    background-color: var(--secondary-color);
+    padding-top: 0%;
 }
 body {
-    background-color: var(--color8);
+    background-color:linear-gradient(90deg, rgb(0, 0, 0), rgb(218,217,217));
     color: var(--color5);
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -28,20 +30,18 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--color5);
+    color: var(--color9);
 }
 p {
     color:#ffffff;
-}
-screen1 {
-    height: 100px;
-    width:200px
 }
 
 .navbar {
     background-color: var(--color8);
 }
-
+.foto1{
+    padding-top: 10%;
+}
 .navbar-brand, .navbar-nav .nav-link {
     color: rgb(255, 255, 255) !important;
 }
@@ -51,7 +51,7 @@ screen1 {
 }
 
 .container {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(131, 55, 55, 0.1);
     padding: 2rem;
@@ -103,7 +103,7 @@ screen1 {
 
 .footer {
     background-color: var(--secondary-color);
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 1rem 0;
     margin-top: auto;
 }
